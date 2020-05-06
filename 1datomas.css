@@ -2,12 +2,23 @@
     background: black;
     color: white;
     font-family: monospace;
+    font-size: 16pt;
+}
+
+body{
+    margin:auto;
+    max-width:800px;
 }
 
 h1{
     margin: auto;
-    margin-top: 30%;
-    with: 50%;
-    font-size: 5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 50%;
+    font-size: 3em;
     text-align: center;
+}
+
+.center{
+    text-align:center;
 }
