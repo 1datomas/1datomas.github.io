@@ -62,8 +62,12 @@ table, th, td {
 }
 
 th, td {
-    padding: 15px;
+    padding: 5px;
     text-align: center;
+}
+
+th{
+    max-width:5%;
 }
 
 th .up,th .down{
