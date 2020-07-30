@@ -271,24 +271,24 @@ MainPageComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "navigationMenus", function() { return navigationMenus; });
-const navigationMenus = [
-    {
-        label: 'Home',
-        path: '',
-    },
-    {
-        label: 'Blog',
-        path: 'blog',
-    },
-    {
-        label: "Nosotros",
-        path: 'about-us',
-    },
-    {
-        label: 'Contacto',
-        path: 'contacto',
-    },
-];
+const navigationMenus = []; /*
+  {
+    label: 'Home',
+    path: '',
+  },
+  {
+    label: 'Blog',
+    path: 'blog',
+  },
+  {
+    label: "Nosotros",
+    path: 'about-us',
+  },
+  {
+    label: 'Contacto',
+    path: 'contacto',
+  },
+];*/
 
 
 /***/ }),
