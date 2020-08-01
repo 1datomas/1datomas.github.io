@@ -73,6 +73,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 /* harmony import */ var _main_page_main_page_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main-page/main-page.component */ "./src/app/main-page/main-page.component.ts");
 /* harmony import */ var _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about-us/about-us.component */ "./src/app/about-us/about-us.component.ts");
+/* harmony import */ var _pactometro_pactometro_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pactometro/pactometro.component */ "./src/app/pactometro/pactometro.component.ts");
+
 
 
 
@@ -81,6 +83,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     { path: '', component: _main_page_main_page_component__WEBPACK_IMPORTED_MODULE_2__["MainPageComponent"] },
+    { path: 'pactometro', component: _pactometro_pactometro_component__WEBPACK_IMPORTED_MODULE_4__["PactometroComponent"] },
     { path: 'about-us', component: _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_3__["AboutUsComponent"] },
 ];
 class AppRoutingModule {
@@ -166,6 +169,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _social_networks_social_networks_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./social-networks/social-networks.component */ "./src/app/social-networks/social-networks.component.ts");
 /* harmony import */ var _main_page_main_page_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./main-page/main-page.component */ "./src/app/main-page/main-page.component.ts");
 /* harmony import */ var _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./about-us/about-us.component */ "./src/app/about-us/about-us.component.ts");
+/* harmony import */ var _pactometro_pactometro_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pactometro/pactometro.component */ "./src/app/pactometro/pactometro.component.ts");
+
 
 
 
@@ -186,7 +191,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _top_bar_top_bar_component__WEBPACK_IMPORTED_MODULE_4__["TopBarComponent"],
         _social_networks_social_networks_component__WEBPACK_IMPORTED_MODULE_5__["SocialNetworksComponent"],
         _main_page_main_page_component__WEBPACK_IMPORTED_MODULE_6__["MainPageComponent"],
-        _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_7__["AboutUsComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_7__["AboutUsComponent"],
+        _pactometro_pactometro_component__WEBPACK_IMPORTED_MODULE_8__["PactometroComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
@@ -196,7 +202,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _top_bar_top_bar_component__WEBPACK_IMPORTED_MODULE_4__["TopBarComponent"],
                     _social_networks_social_networks_component__WEBPACK_IMPORTED_MODULE_5__["SocialNetworksComponent"],
                     _main_page_main_page_component__WEBPACK_IMPORTED_MODULE_6__["MainPageComponent"],
-                    _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_7__["AboutUsComponent"]
+                    _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_7__["AboutUsComponent"],
+                    _pactometro_pactometro_component__WEBPACK_IMPORTED_MODULE_8__["PactometroComponent"]
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -273,22 +280,401 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "navigationMenus", function() { return navigationMenus; });
 const navigationMenus = []; /*
   {
-    label: 'Home',
-    path: '',
-  },
-  {
-    label: 'Blog',
-    path: 'blog',
+    label: 'Pactómetro',
+    path: 'pactometro',
   },
   {
     label: "Nosotros",
     path: 'about-us',
   },
-  {
-    label: 'Contacto',
-    path: 'contacto',
-  },
 ];*/
+
+
+/***/ }),
+
+/***/ "./src/app/pactometro/datos-congreso.ts":
+/*!**********************************************!*\
+  !*** ./src/app/pactometro/datos-congreso.ts ***!
+  \**********************************************/
+/*! exports provided: datosCongreso */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "datosCongreso", function() { return datosCongreso; });
+const datosCongreso = [
+    {
+        name: 'PSOE',
+        seats: 120,
+        color: '#FF0000',
+    },
+    {
+        name: 'PP',
+        seats: 88,
+        color: '#000080',
+    },
+    {
+        name: 'VOX',
+        seats: 52,
+        color: '#3ec903',
+    },
+    {
+        name: 'UP',
+        seats: 35,
+        color: '#740587',
+    },
+    {
+        name: 'ERC',
+        seats: 13,
+        color: '#ffc800',
+    },
+    {
+        name: 'Cs',
+        seats: 10,
+        color: '#e3692f',
+    },
+    {
+        name: 'JxCAT',
+        seats: 8,
+        color: '#ffbf00',
+    },
+    {
+        name: 'EAJ-PNV',
+        seats: 6,
+        color: '#1c520d',
+    },
+    {
+        name: 'EH-Bildu',
+        seats: 5,
+        color: '#059523',
+    },
+    {
+        name: 'Más País',
+        seats: 2,
+        color: '#07f385',
+    },
+    {
+        name: 'CUP-PR',
+        seats: 2,
+        color: '#f3f025',
+    },
+    {
+        name: 'CC',
+        seats: 2,
+        color: '#ffbf00',
+    },
+    {
+        name: 'NA+',
+        seats: 2,
+        color: '#05197f',
+    },
+    {
+        name: 'Compromís',
+        seats: 1,
+        color: '#e86a30',
+    },
+    {
+        name: 'BNG',
+        seats: 1,
+        color: '#00b7ff',
+    },
+    {
+        name: 'PRC',
+        seats: 1,
+        color: '#0d9e03',
+    },
+    {
+        name: 'TE!',
+        seats: 1,
+        color: '#064202',
+    },
+    {
+        name: 'FORO',
+        seats: 1,
+        color: '#02094e',
+    },
+];
+
+
+/***/ }),
+
+/***/ "./src/app/pactometro/pactometro.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/pactometro/pactometro.component.ts ***!
+  \****************************************************/
+/*! exports provided: PactometroComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PactometroComponent", function() { return PactometroComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _datos_congreso__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./datos-congreso */ "./src/app/pactometro/datos-congreso.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+
+
+
+
+const _c0 = function (a0) { return { "background-color": a0 }; };
+function PactometroComponent_div_4_Template(rf, ctx) { if (rf & 1) {
+    const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "b");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "br");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "span", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PactometroComponent_div_4_Template_span_click_8_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r4); const ind_r2 = ctx.index; const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r3.setVote(ind_r2, "S\u00ED"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "S\u00ED");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PactometroComponent_div_4_Template_span_click_10_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r4); const ind_r2 = ctx.index; const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r5.setVote(ind_r2, "Abs"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Abs");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "span", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PactometroComponent_div_4_Template_span_click_12_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r4); const ind_r2 = ctx.index; const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.setVote(ind_r2, "No"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "No");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const datosPartido_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleMap"]("width: 100px; float: left; text-align: center; margin: 10px; border-radius: 5px; border: 2px solid " + datosPartido_r1.color);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleMap"]("margin: 10px; color: " + datosPartido_r1.color);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](datosPartido_r1.name);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", datosPartido_r1.seats, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleMap"]("margin:5px 0px 0px 0px; padding:0px;border-top:2px solid " + datosPartido_r1.color);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](11, _c0, datosPartido_r1.voto === "S\u00ED" ? datosPartido_r1.color + "40" : ""));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](13, _c0, datosPartido_r1.voto === "Abs" ? datosPartido_r1.color + "40" : ""));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](15, _c0, datosPartido_r1.voto === "No" ? datosPartido_r1.color + "40" : ""));
+} }
+class PactometroComponent {
+    constructor() {
+        this.datosPartidos = [];
+        this.lineFunction = d3.line();
+        this.totalSeats = 0;
+        this.height = 130;
+        for (const party of _datos_congreso__WEBPACK_IMPORTED_MODULE_1__["datosCongreso"]) {
+            this.datosPartidos.push({ seats: party.seats, name: party.name, color: party.color, voto: 'Abs' });
+        }
+        for (const party of this.datosPartidos) {
+            this.totalSeats += party.seats;
+        }
+    }
+    ngOnInit() {
+        this.createPactometroSchema();
+        this.updateBars();
+    }
+    onResize(event) {
+        console.log('Width: ' + event.target.innerWidth);
+        this.width = this.svg.node().getBoundingClientRect().width;
+        // Create scale
+        this.xScale = d3.scaleLinear()
+            .domain([0, this.getTotalSeats()])
+            .range([0, this.width]);
+        const baseLine = [[0, 65], [this.width, 65]];
+        this.svg.select('#base-line').transition()
+            .attr('d', this.lineFunction(baseLine));
+        const absoluteMajorityLine = [[this.width / 2, 30], [this.width / 2, 90]];
+        this.svg.select('#majority-line').transition()
+            .attr('d', this.lineFunction(absoluteMajorityLine));
+        this.svg.select('#mayority-name').transition()
+            .attr('x', this.xScale(this.getAbsoluteMayority()));
+        this.svg.select('#mayority-number').transition()
+            .attr('x', this.xScale(this.getAbsoluteMayority()));
+        this.updateBars();
+    }
+    getTotalSeats() {
+        return this.totalSeats;
+    }
+    getAbsoluteMayority() {
+        return Math.floor(this.totalSeats / 2 + 1);
+    }
+    getSeats(value) {
+        let total = 0;
+        for (const party of this.datosPartidos) {
+            if (party.voto === value) {
+                total += party.seats;
+            }
+        }
+        return total;
+    }
+    setVote(ind, value) {
+        this.datosPartidos[ind].voto = value;
+        this.updateBars();
+    }
+    createPactometroSchema() {
+        this.svg = d3.select('svg#pactometro_svg');
+        this.svg.style('width', '100%')
+            .style('height', this.height);
+        this.width = this.svg.node().getBoundingClientRect().width;
+        // Create scale
+        this.xScale = d3.scaleLinear()
+            .domain([0, this.getTotalSeats()])
+            .range([0, this.width]);
+        console.log(this.xScale);
+        const baseLine = [[0, 65], [this.width, 65]];
+        this.svg.append('path')
+            .attr('id', 'base-line')
+            .attr('d', this.lineFunction(baseLine))
+            .attr('stroke', 'black')
+            .attr('stroke-this.width', 2)
+            .attr('stroke-dasharray', '5,2')
+            .attr('fill', 'none');
+        const absoluteMajorityLine = [[this.width / 2, 30], [this.width / 2, 90]];
+        this.svg.append('path')
+            .attr('id', 'majority-line')
+            .attr('d', this.lineFunction(absoluteMajorityLine))
+            .attr('stroke', 'black')
+            .attr('stroke-this.width', 2)
+            .attr('fill', 'none');
+        this.svg.append('text')
+            .attr('id', 'mayority-name')
+            .attr('x', this.xScale(this.getAbsoluteMayority()))
+            .attr('y', 10)
+            .attr('text-anchor', 'middle')
+            .attr('font-weight', 'bold')
+            .text('Mayoría absoluta');
+        this.svg.append('text')
+            .attr('id', 'mayority-number')
+            .attr('x', this.xScale(this.getAbsoluteMayority()))
+            .attr('y', 25)
+            .attr('text-anchor', 'middle')
+            .text(this.getAbsoluteMayority().toString());
+        this.svg.append('path')
+            .attr('id', 'si-line')
+            .attr('d', this.lineFunction(this.getYesPath()))
+            .attr('stroke', 'gray')
+            .attr('stroke-this.width', 1)
+            .attr('fill', 'none');
+        this.svg.append('text')
+            .attr('id', 'si-label')
+            .attr('y', 120);
+        this.svg.append('path')
+            .attr('id', 'no-line')
+            .attr('d', this.lineFunction(this.getNoPath()))
+            .attr('stroke', 'gray')
+            .attr('stroke-this.width', 1)
+            .attr('fill', 'none');
+        this.svg.append('text')
+            .attr('id', 'no-label')
+            .attr('y', 120);
+        this.svg.append('g').attr('id', 'bars-si')
+            .selectAll('rect').data(this.datosPartidos).enter().append('rect');
+        this.svg.append('g').attr('id', 'bars-no')
+            .selectAll('rect').data(this.datosPartidos).enter().append('rect');
+        this.svg.selectAll('rect')
+            .attr('fill', function (d) {
+            return d.color;
+        })
+            .attr('fill-opacity', 0.75)
+            .attr('height', 50)
+            .attr('y', 40)
+            .attr('tittle', function (d) {
+            return d.name;
+        });
+    }
+    updateBars() {
+        const xScale = this.xScale;
+        const width = this.width;
+        const seatsSi = this.datosPartidos.map((sum => a => sum += (a.voto === 'Sí' ? a.seats : 0))(0));
+        this.datosPartidos = this.datosPartidos.map(function (d, i) {
+            d['votosSi'] = seatsSi[i];
+            return d;
+        });
+        const seatsNo = this.datosPartidos.map((sum => a => sum += (a.voto === 'No' ? a.seats : 0))(0));
+        this.datosPartidos = this.datosPartidos.map(function (d, i) {
+            d['votosNo'] = seatsNo[i];
+            return d;
+        });
+        console.log(this.datosPartidos);
+        this.svg.select('g#bars-no').selectAll('rect').data(this.datosPartidos)
+            .transition()
+            .attr('x', function (d) {
+            return width - xScale(d.votosNo);
+        })
+            .attr('width', function (d) {
+            console.log(d.vote);
+            return d.voto === 'No' ? xScale(d.seats) : 0;
+        });
+        this.svg.select('g#bars-si').selectAll('rect').data(this.datosPartidos)
+            .transition()
+            .attr('x', function (d) {
+            return xScale(d.votosSi - (d.voto === 'Sí' ? d.seats : 0));
+        })
+            .attr('width', function (d) {
+            return d.voto === 'Sí' ? xScale(d.seats) : 0;
+        });
+        this.svg.select('text#si-label')
+            .text('Sí (' + this.getSeats('Sí') + ')');
+        const labelYesWidth = this.svg.select('text#si-label').node().getBoundingClientRect().width;
+        this.svg.select('text#si-label').transition()
+            .attr('x', Math.max(xScale(this.getSeats('Sí')), labelYesWidth) / 2)
+            .attr('text-anchor', 'middle');
+        this.svg.select('path#si-line').transition()
+            .attr('d', this.lineFunction(this.getYesPath()));
+        this.svg.select('text#no-label')
+            .text('No (' + this.getSeats('No') + ')');
+        const labelNoWidth = this.svg.select('text#no-label').node().getBoundingClientRect().width;
+        this.svg.select('text#no-label').transition()
+            .attr('x', this.width - Math.max(xScale(this.getSeats('No')), labelNoWidth) / 2)
+            .attr('text-anchor', 'middle');
+        this.svg.select('path#no-line').transition()
+            .attr('d', this.lineFunction(this.getNoPath()));
+    }
+    getYesPath() {
+        return [[this.xScale(0), 40], [this.xScale(0), 100],
+            [this.xScale(this.getSeats('Sí')), 100],
+            [this.xScale(this.getSeats('Sí')), 40]];
+    }
+    getNoPath() {
+        return [[this.width, 40], [this.width, 100],
+            [this.width - this.xScale(this.getSeats('No')), 100],
+            [this.width - this.xScale(this.getSeats('No')), 40]];
+    }
+}
+PactometroComponent.ɵfac = function PactometroComponent_Factory(t) { return new (t || PactometroComponent)(); };
+PactometroComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PactometroComponent, selectors: [["app-pactometro"]], hostBindings: function PactometroComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("resize", function PactometroComponent_resize_HostBindingHandler($event) { return ctx.onResize($event); }, false, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresolveWindow"]);
+    } }, decls: 5, vars: 1, consts: [["id", "pactometro_svg"], [2, "width", "100%", "text-align", "center", "margin", "auto"], ["style", "display: inline", 4, "ngFor", "ngForOf"], [2, "display", "inline"], [2, "padding", "0px 4px", "cursor", "pointer", 3, "ngStyle", "click"]], template: function PactometroComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Pact\u00F3metro");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnamespaceSVG"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "svg", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnamespaceHTML"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, PactometroComponent_div_4_Template, 14, 17, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.datosPartidos);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgStyle"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhY3RvbWV0cm8vcGFjdG9tZXRyby5jb21wb25lbnQuY3NzIn0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PactometroComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-pactometro',
+                templateUrl: './pactometro.component.html',
+                styleUrls: ['./pactometro.component.css']
+            }]
+    }], function () { return []; }, { onResize: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"],
+            args: ['window:resize', ['$event']]
+        }] }); })();
 
 
 /***/ }),
